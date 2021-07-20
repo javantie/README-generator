@@ -1,21 +1,38 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-const fs= require("fs")
+const fs = require("fs");
+const generatorMarkdown = require("./utils/generateMarkdown")
 
 // TODO: Create an array of questions for user input
 //const questions = [];
 const promptUser = () => {
   return inquirer.prompt([
     {
-        type: "input",
-        message: "What is your GitHub username?",
-        name: "UserName",
+      type: "input",
+      message: "What is your GitHub username?",
+      name: "UserName",
+      validate: (UserNameInput) => {
+        if (UserNameInput) {
+          return true;
+        } else {
+          console.log("(Requierd) Please enter GitHub username!");
+          return false;
+        }
       },
-      {
-        type: "input",
-        message: "What is your email address?",
-        name: "Email",
+    },
+    {
+      type: "input",
+      message: "What is your email address?",
+      name: "Email",
+      validate: (EmailInput) => {
+        if (EmailInput) {
+          return true;
+        } else {
+          console.log("(Requierd) Please enter an email!");
+          return false;
+        }
       },
+    },
     {
       type: "input",
       name: "title",
@@ -45,7 +62,7 @@ const promptUser = () => {
     {
       type: "input",
       name: "Installation",
-      message: "Enter your installation description",
+      message: "What necessary dependencies must be installed to run this app?",
       validate: (installationInput) => {
         if (installationInput) {
           return true;
@@ -59,68 +76,62 @@ const promptUser = () => {
       type: "input",
       name: "Usage",
       message: "What is this app used for?",
-      validate: (usageInput) => {
-        if (usageInput) {
-          return true;
-        } else {
-          console.log("Please enter a usage description!");
-          return false;
-        }
-      },
     },
     {
-        type: "checkbox",
-        name: "License",
-        message:
-          "What license do you want to add to this project? (Check all that apply)",
-        choices: [
-          "MIT",
-          "Apache License 2.0",
-          "Mozilla Public License 2.0",
-          "GNU General Public License (GPL)",
-        ],
-      },
+      type: "checkbox",
+      name: "License",
+      message:
+        "What license do you want to add to this project? (Check all that apply)",
+      choices: [
+        "MIT",
+        "Apache License 2.0",
+        "Mozilla Public License 2.0",
+        "GNU General Public License (GPL)",
+      ],
+    },
     {
       type: "input",
       name: "credits",
       message: "Enter your project credits",
-      validate: (creditsInput) => {
-        if (creditsInput) {
-          return true;
-        } else {
-          console.log("Please enter credits!");
-          return false;
-        }
-      },
     },
     {
       type: "input",
       name: "features",
       message: "Enter your project Features",
-      validate: (featuresInput) => {
-        if (featuresInput) {
-          return true;
-        } else {
-          console.log("Please enter project Features!");
-          return false;
-        }
-      },
     },
     {
       type: "input",
       name: "Contributors",
       message: "Please add contributors",
+      validate: (ContributorsInput) => {
+        if (ContributorsInput) {
+          return true;
+        } else {
+          console.log("Please enter a Contributor or Creator");
+          return false;
+        }
+      },
     },
-    
   ]);
 };
 
-promptUser();
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile("../utils" + fileName, data, function (err) {
+    if (err) {
+      return console.log(err);
+    }
+    console.log("Successfully wrote: " + fileName);
+  });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  promptUser()
+  .then(function (data) {
+    writeToFile("README.md", generatorMarkdown(data));
+  });
+}
 
 // Function call to initialize app
 init();
