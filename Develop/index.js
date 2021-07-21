@@ -101,7 +101,7 @@ const promptUser = () => {
     },
     {
       type: "input",
-      name: "Contributors",
+      name: "Contributor",
       message: "Please add contributors",
       validate: (ContributorsInput) => {
         if (ContributorsInput) {
@@ -117,7 +117,7 @@ const promptUser = () => {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile("../utils" + fileName, data, function (err) {
+  fs.writeFile(fileName, data, function (err) {
     if (err) {
       return console.log(err);
     }
