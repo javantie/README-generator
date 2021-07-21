@@ -20,7 +20,6 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `
 # ${data.title}
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/${data.UserName}/${data.Title})
 # Description
 ${data.Description}
 # Table of Contents 
@@ -36,6 +35,7 @@ ${data.Installation}
 ​${data.Usage}
 # License
 This project is license under the ${data.License} license.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/${data.UserName}/${data.Title})
 # Features
 ${data.Features}
 # Contributing

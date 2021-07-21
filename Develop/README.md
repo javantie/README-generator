@@ -1,24 +1,24 @@
 
-# Test PRoject
+# undefined
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Javantie/Read Me Generator)
 # Description
-jdifsld  fjskk ff fkls j jklj lkjs jdkkl js js klj fjs s
+This is a test project to see how it works
 # Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
+* [Features](#features)
 * [Contributing](#contributing)
-* [Tests](#tests)
 * [Questions](#questions)
 # Installation
-The following necessary dependencies must be installed to run the application properly: slkfsjdlfjs lldjfsl js sdjf s
+you will need to insatll inquier 
 # Usage
-​This application is used for ksdjflsdl jhsdfl jlks jlfj skls j; 
+​this app is used to crate a read me generator automatically 
 # License
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/javantie/undefined)
-
+This project is license under the MIT license.
+# Features
+This project features a new way of working
 # Contributing
-​Contributors: undefined
-# Tests
-To run tests, you need to run the following command: undefined
+​Contributors: Akeem Clarke
 # Questions
-If you have any questions about the repo, open an issue or contact javantie directly javnatie@mail.com.
+If you have any questions about the repo, open an issue or contact Javantie directly javantieclarke@gmail.com.
