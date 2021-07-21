@@ -3,6 +3,7 @@
 function renderLicenseBadge(license) {
 }
 
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -26,19 +27,19 @@ ${data.Description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
+* [Features](#features)
 * [Contributing](#contributing)
-* [Tests](#tests)
 * [Questions](#questions)
 # Installation
-The following necessary dependencies must be installed to run the application properly: ${data.Installation}
+${data.Installation}
 # Usage
-​This application is used for ${data.Usage}
+​${data.Usage}
 # License
 This project is license under the ${data.License} license.
+# Features
+${data.Features}
 # Contributing
 ​Contributors: ${data.Contributor}
-# Tests
-To run tests, you need to run the following command: ${data.Test}
 # Questions
 If you have any questions about the repo, open an issue or contact ${data.UserName} directly ${data.Email}.
 `;

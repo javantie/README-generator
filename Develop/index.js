@@ -35,7 +35,7 @@ const promptUser = () => {
     },
     {
       type: "input",
-      name: "title",
+      name: "Title",
       message: "What is your project title?",
       validate: (nameInput) => {
         if (nameInput) {
@@ -87,16 +87,17 @@ const promptUser = () => {
         "Apache License 2.0",
         "Mozilla Public License 2.0",
         "GNU General Public License (GPL)",
+        "BSD 3-Clause License",
       ],
     },
     {
       type: "input",
-      name: "credits",
+      name: "Credits",
       message: "Enter your project credits",
     },
     {
       type: "input",
-      name: "features",
+      name: "Features",
       message: "Enter your project Features",
     },
     {
