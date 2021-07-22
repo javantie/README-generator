@@ -1,8 +1,8 @@
 
-# test project
+# Test Project
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Description
-dfasdfsdfsd
+test to do test
 # Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -11,14 +11,14 @@ dfasdfsdfsd
 * [Contributing](#contributing)
 * [Questions](#questions)
 # Installation
-sfsdfsfsdf
+inquier
 # Usage
-​sdfsfsdfsdfsfs
+​used to generate readme files
 # License
   This project is license under the  MIT license.
 # Test
-sdfsfsdfsdfsdfsdf
+node index.js
 # Contributing
-​Contributors: sdfsdfsdfsdsdfsf
+​Contributors: Akeem Clarke
 # Questions
-If you have any questions about the repo, open an issue or contact [javantie](https://github.com/javantie) directly [javantieclarke@gmail.com](mailto:javantieclarke@gmail.com).
+If you have any questions about the repo, open an issue or contact [javantie](https://github.com/javantie) directly [javantei@mail.com](mailto:javantei@mail.com).
