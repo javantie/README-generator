@@ -78,7 +78,7 @@ const promptUser = () => {
       message: "What is this app used for?",
     },
     {
-      type: "checkbox",
+      type: "list",
       name: "License",
       message:
         "What license do you want to add to this project? (Check all that apply)",
@@ -86,8 +86,8 @@ const promptUser = () => {
         "MIT",
         "Apache License 2.0",
         "Mozilla Public License 2.0",
-        "GNU General Public License (GPL)",
-        "BSD 3-Clause License",
+        "GNU GPL v3",
+        "None"
       ],
     },
     {
@@ -97,8 +97,8 @@ const promptUser = () => {
     },
     {
       type: "input",
-      name: "Features",
-      message: "Enter your project Features",
+      name: "Test",
+      message: "What are the testing commands?",
     },
     {
       type: "input",
