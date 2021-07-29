@@ -1,8 +1,8 @@
 
-# Test Project
+# Team Profile Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Description
-test to do test
+This is a Command Line Interface application that can create an organization tree for a user's organization. It creates simple but well organized cards to show a team profile. This application has taught me how to use node.js to an advanced level and challenged me to use jest to continuously check my codes and make sure I meet the requirements for each phase.
 # Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -11,14 +11,14 @@ test to do test
 * [Contributing](#contributing)
 * [Questions](#questions)
 # Installation
-inquier
+The following necessary dependencies must be installed to run the application properly:
 # Usage
-​used to generate readme files
+​This application is used for creating a team profile.
 # License
   This project is license under the  MIT license.
 # Test
-node index.js
+To run tests, you need to run the following command: node test
 # Contributing
 ​Contributors: Akeem Clarke
 # Questions
-If you have any questions about the repo, open an issue or contact [javantie](https://github.com/javantie) directly [javantei@mail.com](mailto:javantei@mail.com).
+If you have any questions about the repo, open an issue or contact [Javantie](https://github.com/Javantie) directly [javantieclarke@hotmail.com](mailto:javantieclarke@hotmail.com).
