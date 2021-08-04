@@ -124,7 +124,7 @@ function writeToFile(fileName, data) {
 
 function init() {
   promptUser().then(function (data) {
-    writeToFile("README.md", generatorMarkdown(data));
+    writeToFile("SampleReadMe.md", generatorMarkdown(data));
   });
 }
 

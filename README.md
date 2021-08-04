@@ -17,7 +17,7 @@ The following necessary dependencies must be installed to run the application pr
 # License
   This project is license under the  MIT license.
 # Test
-To run tests, you need to run the following command: node test
+To run tests, you need to run the following command: node index.js
 # Contributing
 ​Contributors: Akeem Clarke
 # Questions
