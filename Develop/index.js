@@ -101,8 +101,8 @@ const promptUser = () => {
       type: "input",
       name: "Contributor",
       message: "Please add contributors",
-      validate: (ContributorsInput) => {
-        if (ContributorsInput) {
+      validate: (contributorsInput) => {
+        if (contributorsInput) {
           return true;
         } else {
           console.log("Please enter a Contributor or Creator");

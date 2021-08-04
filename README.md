@@ -22,3 +22,5 @@ To run tests, you need to run the following command: node test
 ​Contributors: Akeem Clarke
 # Questions
 If you have any questions about the repo, open an issue or contact [Javantie](https://github.com/Javantie) directly [javantieclarke@hotmail.com](mailto:javantieclarke@hotmail.com).
+# Walkthrough Demo of App
+View at:  https://drive.google.com/file/d/1SMzWeDmzVNb4VVeWKL-8Nm8TUFVOotuz/view 
